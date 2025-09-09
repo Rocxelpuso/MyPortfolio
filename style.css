@@ -184,11 +184,73 @@ body {
   overflow-y: auto;
 }
 
-.about p {
-  margin-bottom: 1rem; 
-  line-height: 1.6;   
-  text-align: justify; 
+/* About Section */
+.about {
+  margin-bottom: 40px;
+  line-height: 1.8;
 }
+
+/* Skills Section */
+.skills {
+  margin: 40px 0;
+}
+
+.skills h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-badges span {
+  background: #ff6f61;
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.skill-badges span:hover {
+  background: #e0564a;
+  color: #fff;
+  transform: translateY(-3px);
+}
+/* Call to Action */
+.cta {
+  margin: 40px 0;
+  padding: 20px;
+  background: #ff6f61;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.cta a {
+  color: #221da2;
+  font-weight: 600;
+  text-decoration: none;
+}
+.cta a:hover {
+  text-decoration: underline;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+
+
+.cta a:hover {
+  text-decoration: underline;
+}
+
 
 .hero {
   background: #ff6f61;
