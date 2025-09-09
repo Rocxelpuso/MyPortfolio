@@ -1,5 +1,56 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+/* Mobile optimization */
+@media (max-width: 768px) {
+  /* Sidebar goes to top instead of left */
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px;
+    overflow-y: visible; /* disable scroll on mobile */
+  }
+
+  .sidebar img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .sidebar ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .contact-info {
+    display: none; /* optional: hide extra info on mobile for space */
+  }
+
+  .main {
+    margin-left: 0; /* remove left space */
+    padding: 15px;
+  }
+
+  /* Contact form fields full width */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+
+  /* Project cards stacked */
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 * {
   margin: 0;
